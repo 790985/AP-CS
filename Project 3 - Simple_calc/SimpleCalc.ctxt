@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ SimpleCalc()
+comment1.params=c\ d
+comment1.target=void\ SimpleCalc(int,\ int)
+comment2.params=a\ b
+comment2.target=int\ add(int,\ int)
+comment3.params=a\ b
+comment3.target=int\ subtract(int,\ int)
+comment4.params=a\ b
+comment4.target=int\ mult(int,\ int)
+comment5.params=a\ b
+comment5.target=double\ div(int,\ int)
+comment6.params=a\ b
+comment6.target=boolean\ isGreater(int,\ int)
+numComments=7
