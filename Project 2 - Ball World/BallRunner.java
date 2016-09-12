@@ -14,7 +14,7 @@ public class BallRunner
     TGPoint point = new TGPoint(Math.random()*10*num,Math.random()*10*num);
     list[num] = new BallBot(map,point,90.0,10);
 }
-int x = 0
+int x = 0;
     while(x < 15){
     
     }
