@@ -19,20 +19,19 @@ public class Statlab
         System.out.println(nums);
     }
     public void sortarray(int[][] nums){
-    for (int i = 0; i < nums.length; i++){
-            for (int j = 0; i < nums[0].length; j++){
-            if (nums[i][j] > nums[i+1][j+1]){
-            nums[i][j] = nums[j][i];
-            }
-            }
-        }}
+    Array.sort(nums)
+    }
     public int getRange(int[][] nums){
-        for (int i = 0; i < nums.length; i++){
-            for (int j = 0; i < nums[0].length; j++){
-            if (nums[i][j] < nums[j][i]){
-            return j;
-            }
-            }
+        int large ;
+        int small = 100;
+       for(int i = 0; i < nums.length-1; i++){
+       for(int h = 0; h < nums[i].length-1; i++){
+           if(nums[i][h] > large){
+           large = nums[i][h];
+           }if(nums[i][h] < small){
+           small = nums[i][h];
+           }
+       }}
         
         }
         return -1;
