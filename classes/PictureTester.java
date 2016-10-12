@@ -9,6 +9,33 @@
 public class PictureTester
 {
   /** Method to test zeroGreen */
+  public static void testMirrorVerticalRightToLeft(){
+    Picture pic = new Picture("beach.jpg");
+    pic.explore();
+    pic.mirrorVerticalRightToLeft();
+    pic.explore();
+    
+    }
+  public static void testNegate(){
+    Picture pic = new Picture("beach.jpg");
+    pic.explore();
+    pic.negate();
+    pic.explore();
+    
+    }
+  public static void testGrayScale(){
+    Picture pic = new Picture("beach.jpg");
+    pic.explore();
+    pic.grayScale();
+    pic.explore();
+    
+    }
+  public static void testKeepOnlyBlue(){
+    Picture pic = new Picture("beach.jpg");
+    pic.explore();
+    pic.keepOnlyBlue();
+    pic.explore();
+    }
   public static void testZeroGreenRed()
   {
     Picture dt = new Picture("beach.jpg");
