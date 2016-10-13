@@ -9,6 +9,12 @@
 public class PictureTester
 {
   /** Method to test zeroGreen */
+  public static void testMirrorHorizontal(){
+    Picture pic = new Picture("beach.jpg");
+    pic.explore();
+    pic.mirrorHorizontal();
+    pic.explore();
+    }
   public static void testMirrorVerticalRightToLeft(){
     Picture pic = new Picture("beach.jpg");
     pic.explore();
