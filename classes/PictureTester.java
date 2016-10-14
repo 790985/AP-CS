@@ -23,7 +23,7 @@ public class PictureTester
     
     }
   public static void testNegate(){
-    Picture pic = new Picture("beach.jpg");
+    Picture pic = new Picture("snowman.jpg");
     pic.explore();
     pic.negate();
     pic.explore();

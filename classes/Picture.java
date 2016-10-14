@@ -210,18 +210,44 @@ public class Picture extends SimplePicture
                     rightPixel.setColor(leftPixel.getColor());
     }}}
     public void mirrorHorizontal(){
-            Pixel[][] pixels = this.getPixels2D();
+            Pixel[][] pixel = this.getPixels2D();
             Pixel bottomPixel = null;
             Pixel topPixel = null;
-            for(int i = 0; i < pixel[0].length; i++){
-            for(int j = 0; j < pixel[][])
+            for(int i = 0; i < pixel.length; i++){
+            for(int j = 0; j < pixel[i].length; i++){
+            bottomPixel = pixel[i][j];
+            topPixel = pixel[pixel.length][pixel[0].length];
+            topPixel.setRed(bottomPixel.getRed());
+            } 
             }
-            
+        
             }
     public void mirrorTemple()
     {
+        int mirrorPoint = 276;
+        Pixel leftPixel = null;
+        Pixel rightPixel = null;
+        int count = 0;
+        Pixel[][] pixels = this.getPixels2D();
+        for (int row = 27; row < 97; row++)
 
-    }
+        {
+
+            // loop from 13 to just before the mirror point
+
+    for (int col = 13; col < mirrorPoint; col++)
+
+    {
+
+
+
+        leftPixel = pixels[row][col];
+
+        rightPixel = pixels[row][mirrorPoint - col + mirrorPoint];
+
+        rightPixel.setColor(leftPixel.getColor());
+        count++;
+    }}}
 
     /** copy from the passed fromPic to the
      * specified startRow and startCol in the
@@ -232,7 +258,42 @@ public class Picture extends SimplePicture
      */
     public void copy(Picture fromPic,int startRow, int startCol)
     {
+        
+    }
+    public void mirrorArms(){
+        Pixel[][] pixel = this.getPixels2D();
+        Pixel[][] pixel2 = this.getPixels2D();
+        Pixel[][] pixel3 = this.getPixels2D();
+        Pixel[][] pixel4 = this.getPixels2D();
+        pixel = pixel[170][235];
+        pixel2 = pixel2[196][240];
+        pixel3 = pixel3[157][104];
+        pixel4 = pixel4[197][167];
+        int mirrorPoint = 276;
+        Pixel leftPixel = null;
+        Pixel rightPixel = null;
+        int count = 0;
+        Pixel[][] pixels = this.getPixels2D();
+        for (int row = 27; row < 97; row++)
 
+        {
+
+    for (int col = 13; col < mirrorPoint; col++)
+
+    {
+
+
+
+        leftPixel = pixels[row][col];
+
+        rightPixel = pixels[row][mirrorPoint - col + mirrorPoint];
+
+        rightPixel.setColor(leftPixel.getColor());
+        count++;
+    }}
+    
+    
+    
     }
 
     /** Method to create a collage of several pictures */
