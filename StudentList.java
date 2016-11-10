@@ -19,7 +19,9 @@ public class StudentList
     }
     public static void printStudents(){
         for (int i = 0; i < students.size(); i++){
-        System.out.println(students.get(i));
+        System.out.println("ID: ",students.get(i).getID());
+        System.out.println("Name: ",students.get(i).getName));
+        System.out.println("GPA: ",students.get(i).getGPA());
         }
     }
     public static int menuNumber(){
