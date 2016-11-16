@@ -10,8 +10,11 @@ public class Students
     // instance variables - replace the example below with your own
     private int stuID;
     private double stuGPA;
-    private String stuName;
-    /**
+    private String fName;
+    private String mName;
+    private String lName;
+    private String stuName = fName + " " + mName + " " + lName;
+    /*
      * Constructor for objects of class Students
      */
     public Students(int ID, double GPA, String name)

@@ -7,30 +7,37 @@ import java.util.Scanner;
  */
 public class ListRunner
 {
+   public ListRunner(){
     Scanner sc = new Scanner(System.in);
     String name;
     int id;
     int gpa;
+}
     public static void main(String[] args){
-        while(menuNumber() != 4){
-        int input = menuNumber();
-    if(input == 1){
-        System.out.println("What is your students name?: ");
+        Scanner sc = new Scanner(System.in);
+        String name;
+        int id;
+        int gpa;
+        int index;
+            while(StudentList.menuNumber() != 4){
+                if(StudentList.menuNumber() == 1){
+        System.out.println("What is your students name?(First, Middle and Last): ");
         name = sc.next();
         System.out.println("What is your students ID Number?: ");
         id = sc.nextInt();
         System.out.println("What is your students GPA?: ");
         gpa = sc.nextInt();
-        addStudent(new Students(name,id,gpa));
-    }else if (input == 2) {
+        System.out.println("What index is your student at (Start at 0): ");
+        index = sc.nextInt();
+        StudentList.addStudent(new Students(id,gpa,name),index);
+       }else if (StudentList.menuNumber() == 2) {
        System.out.println("What index is your student at (Start at 0): ");
-       delStudent(sc.nextInt());
-    }else if (input == 3) {
-        printStudents();
-    }else{
+       StudentList.delStudent(sc.nextInt());
+       }else if (StudentList.menuNumber() == 3) {
+        StudentList.printStudents();
+       }else{
        System.out.println("We do not recognize what you have entered. Please enter a number from 1-4.");
-   }
-    
-}
+       }
+       } 
    }
 }
