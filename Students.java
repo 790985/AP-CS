@@ -17,11 +17,15 @@ public class Students
     /*
      * Constructor for objects of class Students
      */
-    public Students(int ID, double GPA, String name)
+    public Students(int ID, double GPA, String fullName)
     {
         stuID = ID;
         stuGPA = GPA;
-        stuName = name;
+        if (fullName.indexOf(",") >= 0){
+            fName = fullName.substring(fullName.indexOf(","))
+            lName = fullName.substring(0,fullName.indexOf(",")-1)
+    }else if()
+        ;
     }
 
     public int getID()
