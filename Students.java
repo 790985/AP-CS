@@ -2,40 +2,64 @@
 /**
  * Write a description of class Students here.
  * 
- * @author (your name) 
+ * @author (Chris Campos) 
  * @version (a version number or a date)
  */
 public class Students
 {
     // instance variables - replace the example below with your own
-    private int stuID;
-    private double stuGPA;
+    private int ID;
+    private double GPA;
     private String fName;
     private String mName;
     private String lName;
-    private String stuName = fName + " " + mName + " " + lName;
     /*
      * Constructor for objects of class Students
      */
-    public Students(int ID, double GPA, String fullName)
-    {
-        stuID = ID;
-        stuGPA = GPA;
-        if (fullName.indexOf(",") >= 0){
-            fName = fullName.substring(fullName.indexOf(","))
-            lName = fullName.substring(0,fullName.indexOf(",")-1)
-    }else if()
-        ;
+    public Students(int Id, double Gpa, String fN, String mN, String lN){
+        ID = Id;
+        GPA = Gpa;
+        fName = fN;
+        mName = mN;
+        lName = lN;
     }
-
+    public void setID(int id)
+    {
+        ID = id;
+    }
+    public void setGPA(double gpa)
+    {
+        GPA = gpa;
+    }
+    public void setfName(String first)
+    {
+        fName = first;
+    }public void setmName(String middle) 
+    {
+        mName = middle;
+    }
+    public void setLName(String last) 
+    {
+        lName = last;
+    }
     public int getID()
     {
-       return stuID;
+        return ID;
     }
-    public double getGPA(){
-        return stuGPA;
+    public double getGPA()
+    {
+        return GPA;
     }
-    public String getName(){
-        return stuName;
+    public String getFName()
+    {
+        return fName;
+    }
+    public String getMName() 
+    {
+        return mName;
+    }
+    public String getLName()
+    {
+        return lName;
     }
 }
