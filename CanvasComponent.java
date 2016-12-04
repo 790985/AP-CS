@@ -37,8 +37,8 @@ public class CanvasComponent extends JComponent implements MouseListener, MouseM
     public void mouseDragged(MouseEvent e){
         mouseToX = e.getX();
         mouseToY = e.getY();
-        rectX = rectX - mouseToX;
-        rectY = rectY - mouseToY;
+        rectX = mouseToX - rectX;
+        rectY = mouseToY - rectY;
         repaint();
     }
     public void mouseMoved(MouseEvent e){}
